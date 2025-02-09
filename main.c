@@ -16,8 +16,9 @@ int main() {
     }
 
     for (size_t i = 0; i < 10; i++) {
-        printf("%d\n", arr[i]);
+        printf("Val: %d\n", arr[i]);
     }
 
+    arena_free(&arena);
     return 0;
 }
