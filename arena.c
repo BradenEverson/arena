@@ -14,7 +14,7 @@ void* arena_alloc(arena_t* self, size_t requested_size) {
         return NULL;
     }
 
-    void* allocated = &self->memory + self->offset;
+    void* allocated = self->memory + self->offset;
     self->offset += requested_size;
 
     return allocated;
